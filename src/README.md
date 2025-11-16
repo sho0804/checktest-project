@@ -1,24 +1,60 @@
 # 確認テスト_お問合せフォーム
 
 ## 環境構築手順
-- Docker環境構築
+
+### 1.リポジトリのクローン
 ```bash
-docker-compose up -d
+git clone git@github.com:sho0804/checktest-project.git
+cd checktest-project
+```
+### Dockerコンテナの起動
+```bash
+docker-compose up -d --build
 ```
 
-- Laravel環境構築
+### Laravelのセットアップ
 ```bash
-docker exec -it php bash
+docker-compose exec php bash
+```
+
+### パッケージインストール
+```bash
 composer install
+```
+
+### .env作成と編集
+```bash
 cp .env.example .env
+exit
+```
+
+### VSCode内で.envの編集
+```bash
+code .
+```
+.envの以下を編集：
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=checktest_db
+DB_USERNAME=checktest_user
+DB_PASSWORD=checktest_pass
+
+### キャッシュクリアとアプリキー生成
+```bash
+docker-compose exec php bash
+php artisan config:clear
+php artisan config:cache
 php artisan key:generate
+```
+
+### マイグレーション & シーダー実行
+```bash
 php artisan migrate
 php artisan db:seed
 ```
 
-Web ブラウザで http://localhost:8080 にアクセス
-
-## 開発環境
+## アクセスURL
 お問合せ画面：http://localhost
 ユーザー登録：http://localhost/register
 phpmyadmin：http://localhost:8080
