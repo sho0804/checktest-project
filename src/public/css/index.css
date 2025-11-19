@@ -1,0 +1,131 @@
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-form__item {
+    display: flex;
+    align-content: center;
+    margin-bottom: 16px;
+}
+
+.contact-form__label {
+    gap: 5px;
+    color: #887A6B;
+    font-size: 16px;
+    width: 30%;
+    margin: 0 20px;
+}
+
+.contact-form__required {
+    color: red;
+}
+
+.contact-form__input,
+.contact-form__radio,
+.contact-form__select {
+    font-size: 14px;
+    color: #887A6B;
+    width: 60%;
+    border: none;
+    display: flex;
+}
+
+.contact-form__input--with-gap {
+    font-size: 14px;
+    color: #887A6B;
+    width: 60%;
+    display: flex;
+    gap: 30px;
+}
+
+.contact-form__input--name {
+    width: 50%;
+    height: 26px;
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: 2px;
+    color: #887A6B;
+}
+
+.contact-form__radio-label {
+    display: flex;
+    gap: 5px;
+    padding-left: 10px;
+    color: #887A6B;
+}
+
+.contact-form__input--email {
+    width: 100%;
+    height: 26px;
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: 2px;
+    color: #887A6B;
+}
+
+.contact-form__input--tel {
+    width: 100%;
+    height: 26px;
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: 2px;
+    color: #887A6B;
+    text-align: center;
+}
+
+.contact-form__tel-hyphen {
+    width: 24%;
+    text-align: center;
+    color: #887A6B;
+    padding: auto;
+}
+
+.contact-form__input--address {
+    width: 60%;
+    background-color: #F4F4F4;
+    border: none;
+    height: 26px;
+    border-radius: 2px;
+    color: #887A6B;
+}
+
+.contact-form__input--building {
+    width: 60%;
+    background-color: #F4F4F4;
+    border: none;
+    height: 26px;
+    border-radius: 2px;
+    color: #887A6B;
+}
+
+.contact-form__select {
+    width: 30%;
+    background-color: #F4F4F4;
+    border: none;
+    height: 26px;
+    border-radius: 2px;
+    color: #887A6B;
+}
+
+.contact-form__input--textarea {
+    width: 60%;
+    background-color: #F4F4F4;
+    border: none;
+    height: 100px;
+    border-radius: 2px;
+    color: #887A6B;
+}
+
+.contact-form__button-submit {
+    width: 110px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: #80756B;
+    color: #FFFFFF;
+}
+
+.contact-form__button {
+    text-align: center;
+}
